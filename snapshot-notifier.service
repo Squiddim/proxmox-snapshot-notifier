@@ -1,0 +1,23 @@
+[Unit]
+Description=Proxmox Snapshot Notifier
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+DynamicUser=yes
+
+# Load credentials from the config file
+LoadCredential=config:/etc/snapshot-notifier/snapshot-notifier.conf
+
+# Point the script to the loaded credential
+Environment=CONF_FILE=%d/config
+
+ExecStart=/opt/snapshot-notifier/snapshot-notifier.sh
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ReadOnlyPaths=/opt/snapshot-notifier
+
+[Install]
+WantedBy=multi-user.target

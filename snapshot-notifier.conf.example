@@ -1,0 +1,10 @@
+# Proxmox API configuration
+PROXMOX_HOST="https://proxmox.example.com:8006"
+PROXMOX_TOKEN_ID="user@pam!mytokenid"
+PROXMOX_TOKEN_SECRET="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+# Snapshot age threshold in days (default: 5)
+SNAPSHOT_AGE_DAYS=5
+
+# Mattermost Incoming Webhook URL
+MATTERMOST_WEBHOOK_URL="https://mattermost.example.com/hooks/xxxxxxxxxxxxxxxxxxxxxxxx"
