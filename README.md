@@ -1,4 +1,4 @@
-###proxmox-snapshot-notifier
+# proxmox-snapshot-notifier
 
 Script that periodically checks for old Snapshots and send a report to Mattermost via Webhook
 
