@@ -1,6 +1,7 @@
 # Proxmox API configuration
 PROXMOX_HOST="https://proxmox.example.com:8006"
-PROXMOX_TOKEN_ID="user@pam!mytokenid"
+# Only assign audit (read-only) permissions to the token (role permission vm.audit and sys.audit)
+PROXMOX_TOKEN_ID="user@pam!mytokenid" 
 PROXMOX_TOKEN_SECRET="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 # Snapshot age threshold in days (default: 5)
