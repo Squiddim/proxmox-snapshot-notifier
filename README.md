@@ -3,8 +3,8 @@
 Script that periodically checks for old Snapshots and send a report to Mattermost via Webhook
 
 ```bash
-# Clone/update repository
-git pull
+# Clone repository
+git clone https://github.com/Squiddim/proxmox-snapshot-notifier
 
 # Install dependencies
 sudo apt install curl jq
